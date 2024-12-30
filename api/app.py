@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 allowed_origins = ["https://food-detection.vercel.app", "http://localhost:3000"]
-CORS(app, resources={r"/*": {"origins": allowed_origins}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": allowed_origins}}, supports_credentials=True)
 
 # Đường dẫn model trên Google Drive
 MODEL_URL = "https://drive.google.com/uc?id=1LnUAXj3e1AlpYhO-UBJxx-Ugy39FC9u7"
