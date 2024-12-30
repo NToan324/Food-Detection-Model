@@ -9,7 +9,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-allowed_origins = ["https://food-detection.vercel.app", "http://localhost:3000", "https://food-detection.vercel.app"]
+allowed_origins = ["https://food-detection.vercel.app", "http://localhost:3000"]
 CORS(app, resources={r"/*": {"origins": allowed_origins}}, supports_credentials=True)
 
 # Đường dẫn model trên Google Drive
